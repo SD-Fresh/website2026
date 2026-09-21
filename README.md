@@ -9,7 +9,7 @@ IDL website project
 
 ## 🎯 Project Goal
 
-Create a multi-page website that demonstrates what I have learned about HTML, CSS, JavaScript, and web design.
+Create a multi-page website that demonstrates what I have learned about HTML and CSS.
 
 ## 📁 Required Files and Folders
 
