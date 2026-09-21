@@ -2,8 +2,8 @@
 IDL website project
 ## 👋 Welcome!
 
-##Do not include personal information that should not be public.
-##Do not post your home address, personal phone number, passwords, private account information, or other sensitive information.
+## Do not include personal information that should not be public.
+## Do not post your home address, personal phone number, passwords, private account information, or other sensitive information.
 
 #This repository contains my freshman website project for Software Development.
 
