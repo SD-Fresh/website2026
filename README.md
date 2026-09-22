@@ -18,7 +18,6 @@ My repository should contain:
 - `index.html` — Home page
 - `about.html` — About page
 - `art.html` — Art page
-- `art.html` — Art page
 - `ela.html` — ELA page
 - `ecs.html` — ECS page
 - `math.html` — MATH page
