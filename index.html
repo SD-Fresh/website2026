@@ -1,120 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
     <head>
-       <meta charset="UTF-8">
-        <meta name="keywords" content="HTML, IDL, JakeBermudez">
-        <meta name="description" content="JakeBermudez IDL">
-        <meta name="author" content="JakeBermudez">
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Sasha">
         <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IDLHomepage</title>
-        <link rel="stylesheet" href="Format.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
-        <style>
-            body {
-                color:white; text-shadow: 5px 5px 15px black; 
-                background-size:1880px; 
-                overflow-y: auto;
-                overflow-x: hidden;
-            }
-            p  {
-                color:white;
-                font-size: 1.25rem;
-                transition: .35s ease;
-            }
-            p:hover {
-                transform: translateY(-5px);
-                font-size: 1.3rem;     
-            }
-
-            .layer {
-                position: absolute;
-                top: -5%;
-                left: -5%;
-                width: 140%;
-                height: 140%;
-                min-height: 100vh;
-                margin: 0;
-                background-size: cover;
-                background-position: right;
-                background-repeat: no-repeat;
-                overflow: hidden;
-                transition: transform 0.1s ease-out; 
-                will-change: transform;
-            }
-
-            .layer-bg {
-                background-image: url("imagesIDL/topographic.png");
-                z-index: -1;
-            }
-
-            h1 {
-                color:white; 
-                text-shadow: 2px 2px 15px black;
-                transition: .35s ease;
-            }
-            h1:hover {
-                transform: translateY(-5px);
-                font-size: 1.1rem;
-            }
-            .Panda {
-                position: absolute;
-                top: 200px;
-                left: 800px;
-                transition: .35s ease;
-            }
-            .Panda:hover {
-                transform: translateY(-5px);
-                transform: scale(1.05);
-            }
-            #introtext {
-                position:absolute;
-
-                top: 200px;
-                left: 140px;
-            }
-            #model1 {
-                position: absolute;
-                border: 4px solid #2a2a2a;
-                top: 400px;
-                left: 160px;
-                transition: .35s ease;
-                display: flex;
-            }
-            #model1:hover {
-                transform: translateY(-5px);
-                transform: scale(1.05);
-            }
-        </style>
-        <script src="parallax.js"></script>
+        <link rel="stylesheet" href="external.css">
+        <link rel="icon" type="image/x-icon" href="Images/HCfavicon.ico">
+        <title>Home</title>
     </head>
-    <body>
-                <div class="parallax-container">
-                <div class="layer layer-bg" data-speed="5"></div>
-                </div>
-                <header>
-                    <h1 style="text-align:center;font-size:45px;margin:15px;">Jake Bermudez</h1>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="ECS_Webpage.html">ECS</a></li>
-                        <li><a href="Art_Webpage.html">Art</a></li>
-                        <li><a href="Math_Webpage.html">Math</a></li>
-                        <li><a href="Health_Webpage.html">Health</a></li>
-                        <li><a href="Spanish_Webpage.html">Spanish</a></li>
-                        <li><a href="ELA_Webpage.html">English</a></li>
-                    </ul>
-                </nav>
-                <div class="Panda">
-                    <img src="imagesIDL/xboxpanda.png" style="width:256px; height:256px; border-radius: 15px;">
-                </div>
-
-                <div id="introtext">
-                    <p>Hi, my name is Jake Bermudez. I'm a 9th grader and <br>
-                    I like to play games and I both model and texture<br>
-                    3D models. The games I play are ROBLOX, Castle Crashers,<br>
-                    and the Armored Core franchise. My favorite AC<br>
-                    game is Armored Core 4.</p>
-                </div>
+    <body style="background-color: darkolivegreen;">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Art.html">Art</a></li>
+                    <li><a href="ECS.html">ECS</a></li>
+                    <li><a href="ELA.html">ELA</a></li>
+                    <li><a href="Health.html">Health</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Spanish.html">Spanish</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="Images/Header.jpg" width="250" length="250">
+            <h1>Welcome to my Website!</h1>
+            <p>My name is Sasha. I am a freshman here at PCA.</p>
+            <h2>About Me</h2>
+            <ul>
+                <li>I was born here in Arizona on February 6, 2012. My dad was also born in Arizona, but my mom is from Nogales, Mexico, which is directly under the border separating Mexico and Arizona.That makes me Mexican-American!</li>
+                <li>I'm an only child, so my mom and dad are my main family!</li>
+                <li>I have three dogs. Their names are: Jet, Diego, and Jubilee.</li>
+                <li>My favorite food is the homemade chicken tamales my nana makes!</li>
+                <li>My favorite hobby is reading.</li>
+            </ul>
+        </main>
+        <footer>
+            <img src="Images/Blue Hour.jpg" width="120" length="120">
+        </footer>
     </body>
 </html>
