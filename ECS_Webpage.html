@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, ECS, JakeBermudez">
+        <meta name="description" content="JakeBermudez ECS">
+        <meta name="author" content="JakeBermudez">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECS Page</title>
+        <link rel="stylesheet" href="Format.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
+        <style>
+            p  {
+                color:white;
+                font-size: 1.05rem;
+                transition: .35s ease;
+            }
+            p:hover {
+                transform: translateY(-5px);
+                font-size: 1.1rem;     
+            }
+            h1 {
+                color:white; 
+                text-shadow: 2px 2px 15px black;
+                transition: .35s ease;
+            }
+            h1:hover {
+                transform: translateY(-5px);
+                font-size: 1.8rem;
+            }
+            body {
+                text-shadow: 2px 2px 15px black;
+                background: linear-gradient(to top, rgb(85, 102, 169), rgb(69, 69, 126)) no-repeat fixed;
+                background-size: cover;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            .Heading {
+                left: 490px;
+            }
+
+            /*gallery rot scale pos*/
+            #AnimatedGif {
+                position: absolute;
+                top: 350px;
+                left: 60px;
+                display: flex;
+            }
+            #DesignSlide {
+                position: absolute;
+                top: 350px;
+                left: 460px;
+                display: flex;
+            }
+            #DigitalPainting {
+                position: absolute;
+                top: 350px;
+                left: 880px;
+                display: flex;
+            }
+            #TourPoster {
+                position: absolute;
+                top: 840px;
+                left: 100px;
+                display: flex;
+            }
+            #Portrait {
+                position: absolute;
+                top: 840px;
+                left: 520px;
+                display: flex;
+            }
+            #PopArt {
+                position: absolute;
+                top: 840px;
+                left: 950px;
+                display: flex;
+            }
+
+            /*gallery text*/
+
+            .Label {
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+            #AnimatedGifText {
+                position: absolute;
+                display: inline-block;
+                top: 275px;
+                left: 40px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+
+            #DesignSlideText {
+                position: absolute;
+                display: inline-block;
+                top: 275px;
+                left: 440px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+            
+            #PaintingText {
+                position: absolute;
+                display: inline-block;
+                top: 275px;
+                left: 885px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+
+            #TourPosterText {
+                position: absolute;
+                display: inline-block;
+                top: 750px;
+                left: 60px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+
+            #PortraitText {
+                position: absolute;
+                display: inline-block;
+                top: 750px;
+                left: 450px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+
+            #PopArtText {
+                position: absolute;
+                display: inline-block;
+                top: 750px;
+                left: 870px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+
+            }
+                /*gallery descriptions*/
+
+                #AnimatedGifDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 550px;
+                    left: 65px;
+                }
+
+                #DesignSlideDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 550px;
+                    left: 460px;
+                }
+
+                #DigitalPaintingDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 550px;
+                    left: 900px;
+                }
+
+                #TourPosterDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 1160px;
+                    left: 80px;
+                }
+
+                #PortraitDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 1100px;
+                    left: 500px;
+                }
+
+                #PopArtDesc {
+                    position: absolute;
+                    display: inline-block;
+                    top: 1100px;
+                    left: 920px;
+                }
+        </style>
+    </head>
+        <body>
+            <div id="ECSMain">
+                    <header>
+                        <h1 style="text-align:center;font-size:45px;margin:15px;">ECS</h1>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Art_Webpage.html">Art</a></li>
+                            <li><a href="Math_Webpage.html">Math</a></li>
+                            <li><a href="Health_Webpage.html">Health</a></li>
+                            <li><a href="Spanish_Webpage.html">Spanish</a></li>
+                            <li><a href="ELA_Webpage.html">English</a></li>
+                        </ul>
+                    </nav>
+                    <div class="Heading">
+                        <h1 style="font-size:40px;">ECS Projects</h1>
+                    </div>
+                    
+                    <!--gallery text-->
+                    <div class="Label" style="font-size: 14px;">
+                        <div id="AnimatedGifText">
+                            <h1>Animated 6 Second Gif</h1>
+                        </div>
+
+                        <div id="DesignSlideText">
+                            <h1>Principles Of Design Slide</h1>
+                        </div>
+
+                        <div id="PaintingText">
+                            <h1>Digital Painting In PS</h1>
+                        </div>
+
+                        <div id="PortraitText">
+                            <h1>Digital Portrait Painting</h1>
+                        </div>
+
+                        <div id="TourPosterText">
+                            <h1>Fantasy Tour Poster</h1>
+                        </div>
+
+                        <div id="PopArtText">
+                            <h1>Digital Pop Art Painting</h1>
+                        </div>
+
+                    </div>
+
+                    <!--gallery images-->
+                    <div class="Gallery">
+                        <div id="AnimatedGif">
+                            <a target="_blank" href="imagesIDL/JakeBermudez_ECSAnimatedGif.gif" style="width:300px; height:200px;">
+                            <img src="imagesIDL/JakeBermudez_ECSAnimatedGif.gif" style="width:300px; height:200px;">
+                            </a>
+                        </div>
+
+                        <div id="DesignSlide">
+                            <a target="_blank" href="imagesIDL/Explaining The 7 Principles Of Design.pdf" style="width:350px; height:200px;">
+                            <img src="imagesIDL/DesignSlide.png" style="width:350px; height:200px;">
+                            </a>
+                        </div>
+
+                        <div id="DigitalPainting">
+                            <a target="_blank" href="imagesIDL/landscape_ecs_JakeBermudez.png" style="width:350px; height:200px;">
+                            <img src="imagesIDL/landscape_ecs_JakeBermudez.png" style="width:350px; height:200px;">
+                            </a>
+                        </div>
+
+                        <div id="TourPoster">
+                            <a target="_blank" href="imagesIDL/fantasy tour ecsJakeBermudez.png" style="width:210px; height:320px;">
+                            <img src="imagesIDL/fantasy tour ecsJakeBermudez.png" style="width:210px; height:320px;">
+                            </a>
+                        </div>
+
+                        <div id="Portrait">
+                            <a target="_blank" href="imagesIDL/portrait_JakeBermudez.jpg" style="width:200px; height:256px;">
+                            <img src="imagesIDL/portrait_JakeBermudez.jpg" style="width:200px; height:256px;">
+                            </a>
+                        </div>
+
+                        <div id="PopArt">
+                            <a target="_blank" href="imagesIDL/PopArt_JakeBermudez.png" style="width:200px; height:256px;">
+                            <img src="imagesIDL/PopArt_JakeBermudez.png" style="width:200px; height:256px;">
+                            </a>
+                        </div>
+                
+                    </div>
+
+                    <!--gallery description-->
+                    <div class="Description" style="font-size: 15px;">
+                        <div id="AnimatedGifDesc">
+                            <p>For this assignment, we were instructed<br>
+                            to make a atleast 6 second GIF <br>
+                            that has a background, subject<br>
+                            and movement. I chose to use<br>
+                            a fighter jet in the clouds<br>
+                            because of my admiration for<br>
+                            aviation and it fits the rubric given to us.
+                            </p>
+                        </div>
+
+                        <div id="DesignSlideDesc">
+                            <p>For this assignment, the instructions<br>
+                            said we were to use Google Slides to create<br>
+                            a presentation explaining the 7 principles of<br>
+                            design. Each slide should explain a concept, <br>
+                            and a graphic representation was to be shown. <br>
+                            </p>
+                        </div>
+
+                        <div id="DigitalPaintingDesc">
+                            <p>For this assignment, we were to use<br>
+                            Adobe Photoshop to create a Digital<br>
+                            Landscape Painting. We were instructed<br>
+                            to base our painting off of a canyon<br>
+                            shown in the tutorial video. We also <br>
+                            utilized layers for each section of the<br>
+                            painting, such as the clouds or the ground. <br>
+                            </p>
+                        </div>
+
+                        <div id="TourPosterDesc">
+                            <p>For this assignment, we were told<br>
+                            to make a fictional tour poster based<br>
+                            on either a real or a fictional band.<br>
+                            A opening band was also required, <br>
+                            along with dates and locations. <br>
+                            For my band I chose I Promised The World<br>
+                            which is a real band that I like. For my opener,<br>
+                            I chose Skycamefalling, which is another real band.<br>
+                            </p>
+                        </div>
+
+                        <div id="PortraitDesc">
+                            <p>For this assignment, we were to <br>
+                            choose a person that we wanted to<br>
+                            make a portrait of in Photoshop. <br>
+                            I chose Dan Hentschel, a actor<br>
+                            and comedian, who's known most<br>
+                            for his work on Youtube. I personally<br>
+                            enjoy his work and he's a great actor<br>
+                            so that's why I thought to choose him.
+                            </p>
+                        </div>
+
+                        <div id="PopArtDesc">
+                            <p>For this assignment, we were told<br>
+                            to find a person that we would make<br>
+                            digital art of. I personally chose a popular<br>
+                            Youtuber called Kreekcraft. I don't watch<br>
+                            him personally, but he's a influencer<br>
+                            and seeing how pop art is mostly made<br>
+                            from celebrities or influencers, I thought<br>
+                            he'd be a good fit.
+                            </p>
+                        </div>
+
+                </div>
+
+            </div>
+        </body>
+    </html>

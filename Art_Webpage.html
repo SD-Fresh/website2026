@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, Art, JakeBermudez">
+        <meta name="description" content="JakeBermudez Art">
+        <meta name="author" content="JakeBermudez">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art Page</title>
+        <link rel="stylesheet" href="Format.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
+        <style>
+            p  {
+                color:white;
+                font-size: 1.1rem;
+                transition: .35s ease;
+            }
+            p:hover {
+                transform: translateY(-5px);
+                font-size: 1.15rem;     
+            }
+            h1 {
+                color:white; 
+                text-shadow: 2px 2px 15px black;
+                transition: .35s ease;
+            }
+            h1:hover {
+                transform: translateY(-5px);
+                font-size: 2.1rem;
+            }
+            body {
+                color:white; text-shadow: 2px 2px 15px black;
+                background: linear-gradient(to top, rgb(126, 88, 61), rgb(213, 176, 95)) no-repeat fixed;
+                background-size: cover;
+            }
+            .Heading {
+                left: 500px;
+            }
+            #FullArtPieceText {
+                position: absolute;
+                display: inline-block;
+                top: 280px;
+                left: 65px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+            #MyArtPieceText {
+                position: absolute;
+                display: inline-block;
+                top: 280px;
+                left: 480px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+            #AlbumCoverText {
+                position: absolute;
+                display: inline-block;
+                top: 280px;
+                left: 900px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+            #FullArtPiece {
+                position: absolute;
+                top: 380px;
+                left: 65px;
+                display: flex;
+            }
+            #MyArtPiece {
+                position: absolute;
+                top: 380px;
+                left: 500px;
+                display: flex;
+            }
+            #AlbumCover {
+                position: absolute;
+                top: 380px;
+                left: 910px;
+                display: flex;
+            }
+            #FullArtPieceDesc {
+                position: absolute;
+                display: flex;
+                top: 800px;
+                left: 20px;
+            }
+            #AlbumCoverDesc {
+                position: absolute;
+                display: flex;
+                top: 780px;
+                left: 800px;
+            }
+        </style>
+        <link rel="stylesheet" href="Format.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
+    </head>
+        <body>
+            <div id="ArtMain">
+                <header>
+                    <h1 style="text-align:center;font-size:45px;margin:15px;">Art</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="ECS_Webpage.html">ECS</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Math_Webpage.html">Math</a></li>
+                        <li><a href="Health_Webpage.html">Health</a></li>
+                        <li><a href="Spanish_Webpage.html">Spanish</a></li>
+                        <li><a href="ELA_Webpage.html">English</a></li>
+                    </ul>
+                </nav>
+
+                <div class="Heading">
+                    <h1 style="font-size:40px;">Art Projects</h1>      
+                </div>
+
+                <div id="FullArtPieceText">
+                    <h1>Full Grid Art Piece</h1>
+                </div>
+
+                <div id="MyArtPieceText">
+                    <h1>My Grid Art Piece</h1>
+                </div>
+
+                <div id="AlbumCoverText">
+                    <h1>My Album Cover</h1>
+                </div>
+
+                <div class="Gallery">
+                    <div id="FullArtPiece">
+                       <a target="_blank" href="imagesIDL/FullArtPiece.jpg" style="width:312px; height:412px;">
+                        <img src="imagesIDL/FullArtPiece.jpg" style="width:312px; height:412px;">
+                        </a>
+                    </div>
+
+                    <div id="MyArtPiece">
+                       <a target="_blank" href="imagesIDL/MyArtPiece.jpg" style="width:256px; height:356px;">
+                        <img src="imagesIDL/MyArtPiece.jpg" style="width:256px; height:356px;">
+                        </a>
+                    </div>
+
+                    <div id="AlbumCover">
+                        <a target="_blank" href="imagesIDL/JakeBermudez_Albumcover.jpg" style="width: 256px; height: 400px;">
+                        <img src="imagesIDL/JakeBermudez_Albumcover.jpg" style="width: 256px; height: 400px;">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="FullArtPieceDesc">
+                        <p>We were tasked to work on a collaborative art piece, with 35 pieces. <br>
+                        I'm piece 4, and I had to communicate with the 3 pieces around mine<br>
+                        to ensure that our work and styles would match. You can find our<br>
+                        art piece in the hallway on the right, along with the two other group<br>
+                        pieces.</p>
+                </div>
+
+                <div id="AlbumCoverDesc">
+                    <p>The goal for this assignment was to create a autobiographical album cover.<br>
+                    At first I had a lot of ideas, but I settled on the current one. It represents a <br>
+                    attempt or well a ode to freedom, which is because I think realizing yourfreedom, individuality, and will is important for a person. I'm not super pleased<br>
+                    with the drawing itself, and I forsure wish I worked on it earlier so I could have more time.</p>
+                </div>
+            </div>
+        </body>
+    </html>

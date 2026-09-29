@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, Spanish, JakeBermudez">
+        <meta name="description" content="JakeBermudez Spanish">
+        <meta name="author" content="JakeBermudez">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spanish Page</title>
+        <link rel="stylesheet" href="Format.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
+        <style>
+            body {
+                text-shadow: 2px 2px 15px black;
+                background: linear-gradient(to top, rgb(69, 210, 180), rgb(82, 152, 136)) no-repeat fixed;
+                background-size: cover;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            p  {
+                color:white;
+                font-size: 1.3rem;
+                transition: .35s ease;
+            }
+            p:hover {
+                transform: translateY(-5px);
+                font-size: 1.33rem;     
+            }
+
+            h1 {
+                color:white; 
+                text-shadow: 2px 2px 15px black;
+                transition: .35s ease;
+            }
+            h1:hover {
+                transform: translateY(-5px);
+                font-size: 1.1rem;
+            }
+            .Heading {
+                left: 420px;
+            }
+
+            #SpanishShortStory {
+                position: absolute;
+                top: 280px;
+                left: 300px;
+                border-radius: 15px;
+                display: flex;
+            }
+            #SpanishDesc {
+                position: absolute;
+                display: inline-block;
+                top: 700px;
+                left: 220px;
+                box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+                background-color: rgba(45,45,45,1);
+                display: flex;
+                border-radius: 20px;
+                background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            }
+        </style>
+        <script src="parallax.js"></script>
+    </head>
+        <body>
+            <header>
+            <h1 style="text-align:center;font-size:45px;margin:15px;">Spanish</h1>
+            </header>
+            <nav>
+                <ul>
+                        <li><a href="ECS_Webpage.html">ECS</a></li>
+                        <li><a href="Art_Webpage.html">Art</a></li>
+                        <li><a href="Math_Webpage.html">Math</a></li>
+                        <li><a href="Health_Webpage.html">Health</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ELA_Webpage.html">English</a></li>
+                </ul>
+            </nav>
+            <div class="Heading">
+                <h1 style="font-size:40px;">Spanish Short Story</h1>
+            </div>
+            <div class="Gallery">
+                <div id="SpanishShortStory">
+                    <a target="_blank" href="imagesIDL/SpanishStory.png" style="width: 700px; height: 400px; border-radius: 15px;">
+                    <img src="imagesIDL/SpanishStory.png" style="width: 700px; height: 400px; border-radius: 15px;;">
+                    </a>
+                </div>
+            </div>
+
+            <div id="SpanishDesc">
+                <p>This story is about a guy named Alan, who needs to find his cat El Nino.<br>
+                    He searches for his cat, and eventually finds El Nino. He holds a party afterwards.</p>
+            </div>
+        </body>
+    </html>

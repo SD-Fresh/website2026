@@ -1,0 +1,85 @@
+    body {
+            background-color:#b6bbd3;
+            font-family: Verdana;
+            color:white; text-shadow: 2px 2px 15px black;
+
+        p  {
+            color:white;   
+        }
+        h1 {
+            color:white; text-shadow: 2px 2px 15px black;
+        }
+        nav {
+            background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            padding: 1px  40px;
+            margin-top: -10px;
+            border-radius: 15px;
+            box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+
+        }
+
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav a {
+            position: relative;
+            display: block;
+            padding: 2px 22px;
+            border-radius: 999px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            transition: .35s ease;
+        }
+
+        nav a:hover {
+            background-color:rgb(92, 92, 92);
+            transform: translateY(-5px);
+            font-size: 21px;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 999px;
+            background-image: linear-gradient(to top, rgb(91, 91, 91), rgb(120, 120, 120));
+            opacity: 0;
+            z-index: -1;
+            transition: .35s;
+
+        }
+
+        nav a:hover::before {
+            opacity: 1;
+        }
+
+        .Heading {
+            position: absolute;
+            display: inline-block;
+            top:150px;
+            background-color: rgba(45,45,45,1);
+            justify-content: center;
+            border-radius: 20px;
+            background-image: linear-gradient(to top, rgb(57, 57, 57), rgb(87, 87, 87));
+            box-shadow: 10px 5px 10px rgba(45,45,45,0.5);
+        }
+
+        .Gallery {
+            box-shadow: 35px 35px 35px rgba(45,45,45,0.5);
+        }
+        .Gallery a {
+            transition: .35s ease;
+            border: 3px solid #3d3d3d;
+        }
+        .Gallery a:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+
+    }

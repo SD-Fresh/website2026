@@ -1,62 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="HTML, CSS, Homepage">
-        <meta name="description" content="About Me Site">
-        <meta name="author" content="Brown">
-        <meta http-equiv="refresh" content="75">
+       <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, IDL, JakeBermudez">
+        <meta name="description" content="JakeBermudez IDL">
+        <meta name="author" content="JakeBermudez">
+        <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
-        <link rel="icon" type="image/x-icon" href="favicon_io/favicon-32x32.png"/>
-        <link rel="stylesheet" href="styleIDL.css">
-      <!--internal css-->
-     <style>
-            h1{
-                border-style:double;
-                border-width: 5px;
-                background-color:blanchedalmond;    
+        <title>IDLHomepage</title>
+        <link rel="stylesheet" href="Format.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="jakelb-32x32.png"/>
+        <style>
+            body {
+                color:white; text-shadow: 5px 5px 15px black; 
+                background-size:1880px; 
+                overflow-y: auto;
+                overflow-x: hidden;
             }
-    </style>
-    </head>
+            p  {
+                color:white;
+                font-size: 1.25rem;
+                transition: .35s ease;
+            }
+            p:hover {
+                transform: translateY(-5px);
+                font-size: 1.3rem;     
+            }
 
-    <body style="background-color:ivory">
-    <main>    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="ELA.html">English</a></li>
-                <li><a href="Math.html">Math</a></li>
-                <li><a href="Art.html">Art</a></li>
-                <li><a href="ECS.html">ECS</a></li>
-                <li><a href="Health.html">Health</a></li>
-                <li><a href="Spanish.html">Spanish</a></li>
-            </ul>
-        </nav>
-    </header>
-    </main>
-       <h1>About Me</h1>
-       <p>Hello! This is the about me page of my IDL site. The following web pages were created for each of my 6 classes
-           (not including software). </p>
-        
-       <p>My name is Simon, and I am a student at Phoenix Coding Academy. My favorite subject is science, 
-            my favorite food is mac and cheese, my favorite 
-            band is Gorillaz, and my favorite game is splatoon. This website will be my first experience 
-            with HTML.</p>     
-        <!--adding images-->
-        <img src="images/mac and chee.jpg" alt="mac and cheese" height=200>
-        <img src="images/self title.jpg" alt="self titled" width=200>
-        <img src="images/splatoon.png" alt="splatoon logo" height=200>
-       <p>I was born and raised in the Phoenix area. This is my home. Before going to Phoenix Coding,
-         I attended Vista Del Sur Accelerated Academy for 9 years of schooling. In second grade, we started 
-         a program called "hour of code" where my interest in programming began. I have been semi-actively using 
-         Scratch.mit.edu for about 4 years now.
-       </p>
-       <p>While attending this school, I hope to exponentially improve my coding skills, 
-        as well as math and spanish. Thank you for reading!</p>
-       <h1>im using this so the footer doesnt cut off anything mb</h1>
-    <footer>
-       <h6>IDL website freshamn year &copy;PCA</h6>
-    </footer>
+            .layer {
+                position: absolute;
+                top: -5%;
+                left: -5%;
+                width: 140%;
+                height: 140%;
+                min-height: 100vh;
+                margin: 0;
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                transition: transform 0.1s ease-out; 
+                will-change: transform;
+            }
+
+            .layer-bg {
+                background-image: url("imagesIDL/topographic.png");
+                z-index: -1;
+            }
+
+            h1 {
+                color:white; 
+                text-shadow: 2px 2px 15px black;
+                transition: .35s ease;
+            }
+            h1:hover {
+                transform: translateY(-5px);
+                font-size: 1.1rem;
+            }
+            .Panda {
+                position: absolute;
+                top: 200px;
+                left: 800px;
+                transition: .35s ease;
+            }
+            .Panda:hover {
+                transform: translateY(-5px);
+                transform: scale(1.05);
+            }
+            #introtext {
+                position:absolute;
+
+                top: 200px;
+                left: 140px;
+            }
+            #model1 {
+                position: absolute;
+                border: 4px solid #2a2a2a;
+                top: 400px;
+                left: 160px;
+                transition: .35s ease;
+                display: flex;
+            }
+            #model1:hover {
+                transform: translateY(-5px);
+                transform: scale(1.05);
+            }
+        </style>
+        <script src="parallax.js"></script>
+    </head>
+    <body>
+                <div class="parallax-container">
+                <div class="layer layer-bg" data-speed="5"></div>
+                </div>
+                <header>
+                    <h1 style="text-align:center;font-size:45px;margin:15px;">Jake Bermudez</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="ECS_Webpage.html">ECS</a></li>
+                        <li><a href="Art_Webpage.html">Art</a></li>
+                        <li><a href="Math_Webpage.html">Math</a></li>
+                        <li><a href="Health_Webpage.html">Health</a></li>
+                        <li><a href="Spanish_Webpage.html">Spanish</a></li>
+                        <li><a href="ELA_Webpage.html">English</a></li>
+                    </ul>
+                </nav>
+                <div class="Panda">
+                    <img src="imagesIDL/xboxpanda.png" style="width:256px; height:256px; border-radius: 15px;">
+                </div>
+
+                <div id="introtext">
+                    <p>Hi, my name is Jake Bermudez. I'm a 9th grader and <br>
+                    I like to play games and I both model and texture<br>
+                    3D models. The games I play are ROBLOX, Castle Crashers,<br>
+                    and the Armored Core franchise. My favorite AC<br>
+                    game is Armored Core 4.</p>
+                </div>
     </body>
 </html>
